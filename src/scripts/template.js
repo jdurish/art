@@ -1,4 +1,8 @@
 
+const pageTag = document.querySelector("meta[data-title]");
+
+const pageTitle = pageTag.dataset.title;
+
 const header = document.querySelector("header");
 
 const logo = document.createElement("a");
@@ -26,10 +30,18 @@ nav.appendChild(homeAnchor);
 homeAnchor.href = "/";
 homeAnchor.innerText = "Home";
 
+if (pageTitle === "home") {
+    homeAnchor.className = "current-page";
+}
+
 for (const doc of docs) {
     const anchor = document.createElement("a");
     nav.appendChild(anchor);
 
     anchor.href = `/${fileNameOf(doc)}`;
     anchor.innerText = doc;
+
+    if (pageTitle === fileNameOf(doc)) {
+        anchor.className = "current-page";
+    }
 }
