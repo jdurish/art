@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    color: #924b03;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
 a {
@@ -14,17 +16,33 @@ a:hover {
 
 a.current-page {
     font-weight: bold;
+    font-size: 24px;
 }
 
 body {
     display: flex;
     flex-flow: column;
     align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url("../images/background.png");
 }
 
 header, main {
     width: 950px;
     padding: 12px;
+}
+
+@media only screen and (max-width: 1000px) {
+    header, main {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    header > nav {
+        display: none;
+    }
 }
 
 header {
@@ -39,6 +57,8 @@ a.logo {
     aspect-ratio: 1;
     background-image: url("../images/logo.jpg");
     background-size: cover;
+    border: 1px solid #eed1ab;
+    box-shadow: 0px 16px 4px -6px rgba(0,0,0,0.1);
 }
 
 nav {
