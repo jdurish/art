@@ -1,6 +1,12 @@
 
 const header = document.querySelector("header");
 
+const logo = document.createElement("a");
+header.appendChild(logo);
+
+logo.href = "/";
+logo.className = "logo";
+
 const nav = document.createElement("nav");
 header.appendChild(nav);
 
@@ -18,7 +24,7 @@ const docs = [
 const homeAnchor = document.createElement("a");
 nav.appendChild(homeAnchor);
 
-homeAnchor.href = `/`;
+homeAnchor.href = "/";
 homeAnchor.innerText = "Home";
 
 for (const doc of docs) {
