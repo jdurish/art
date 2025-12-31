@@ -4,7 +4,7 @@ const header = document.querySelector("header");
 const nav = document.createElement("nav");
 header.appendChild(nav);
 
-const fileNameOf = (doc) => doc.toLowerCase().replace(" ", "_");
+const fileNameOf = (doc) => doc.toLowerCase().replace(" ", "-");
 
 const docs = [
     "Drawings",
