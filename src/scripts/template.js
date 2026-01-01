@@ -53,6 +53,7 @@ menu.className = "menu";
 
 menu.addEventListener("click", () => {
     nav.classList.toggle("open");
+    menu.classList.toggle("open");
 });
 
 document.body.addEventListener("click", (event) => {
@@ -61,4 +62,5 @@ document.body.addEventListener("click", (event) => {
     }
 
     nav.classList.remove("open");
+    menu.classList.remove("open");
 });

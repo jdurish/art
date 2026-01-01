@@ -3,7 +3,7 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: #924b03;
-    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.1);
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
 }
 
 button {
@@ -59,6 +59,18 @@ button.menu {
         display: flex;
         align-self: center;
         filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.8));
+    }
+
+    header > button.menu:hover {
+        opacity: 0.8;
+    }
+
+    header > button.menu:active {
+        opacity: 0.6;
+    }
+
+    header > button.menu.open {
+        filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.6));
     }
 
     header > button.menu::before {
