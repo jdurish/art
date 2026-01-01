@@ -6,6 +6,12 @@
     text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
 a {
     text-decoration: none;
 }
@@ -34,6 +40,10 @@ header, main {
     padding: 12px;
 }
 
+button.menu {
+    display: none;
+}
+
 @media only screen and (max-width: 1000px) {
     header, main {
         width: 80%;
@@ -43,6 +53,32 @@ header, main {
 @media only screen and (max-width: 700px) {
     header > nav {
         display: none;
+    }
+
+    header > button.menu {
+        display: flex;
+        align-self: center;
+        filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.8));
+    }
+
+    header > button.menu::before {
+        content: url("../images/menu.svg");
+    }
+
+    header > nav.open {
+        position: absolute;
+        display: flex;
+        flex-flow: column;
+        align-items: end;
+        padding: 12px 24px;
+        border-radius: 24px;
+        right: 60px;
+        top: 100px;
+        background: rgba(0, 0, 0, 0.158);
+    }
+    
+    header > nav.open > a {
+        padding: 12px;
     }
 }
 
@@ -58,7 +94,6 @@ a.logo {
     aspect-ratio: 1;
     background-image: url("../images/logo.jpg");
     background-size: cover;
-    border: 1px solid #eed1ab;
     box-shadow: 0px 16px 4px -6px rgba(0,0,0,0.1);
 }
 

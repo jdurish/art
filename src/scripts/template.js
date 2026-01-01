@@ -45,3 +45,20 @@ for (const doc of docs) {
         anchor.className = "current-page";
     }
 }
+
+const menu = document.createElement("button");
+header.appendChild(menu);
+
+menu.className = "menu";
+
+menu.addEventListener("click", () => {
+    nav.classList.toggle("open");
+});
+
+document.body.addEventListener("click", (event) => {
+    if (event.target === menu) {
+        return;
+    }
+
+    nav.classList.remove("open");
+});
