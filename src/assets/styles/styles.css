@@ -172,6 +172,7 @@ main {
     flex-flow: row wrap;
     align-items: start;
     justify-content: space-between;
+    gap: 12px;
 }
 
 .gallery > img {
