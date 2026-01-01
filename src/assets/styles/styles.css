@@ -3,6 +3,7 @@
     color: #924b03;
     text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
     scrollbar-width: thin;
+    scrollbar-color: #924b03 transparent;
 }
 
 :not(dialog) {
@@ -18,6 +19,7 @@ dialog {
     padding: 0;
     outline: none;
     border: none;
+    overflow: hidden;
 }
 
 dialog > img {
