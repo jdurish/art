@@ -70,11 +70,11 @@ button.menu {
         display: flex;
         flex-flow: column;
         align-items: end;
-        padding: 12px 24px;
+        padding: 12px 12px 12px 36px;
         border-radius: 24px;
         right: 60px;
         top: 100px;
-        background: rgba(0, 0, 0, 0.158);
+        background: rgba(0, 0, 0, 0.2);
     }
     
     header > nav.open > a {
