@@ -137,4 +137,16 @@ nav > a {
 main {
     display: grid;
     grid-template-columns: 3fr 5fr;
+    gap: 24px;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.gallery > img {
+    max-width: 48%;
 }
