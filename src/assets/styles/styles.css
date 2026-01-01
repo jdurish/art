@@ -52,7 +52,17 @@ button.menu {
 
 @media only screen and (max-width: 700px) {
     header > nav {
+        position: absolute;
+        right: 20%;
+        top: 54px;
+    }
+    
+    header > nav > a:not(.current-page) {
         display: none;
+    }
+    
+    nav > a.current-page {
+        font-size: 18px;
     }
 
     header > button.menu {
@@ -78,8 +88,6 @@ button.menu {
     }
 
     header > nav.open {
-        position: absolute;
-        display: flex;
         flex-flow: column;
         align-items: end;
         padding: 12px 12px 12px 36px;
@@ -91,7 +99,13 @@ button.menu {
     }
     
     header > nav.open > a {
+        display: flex;
         padding: 12px;
+    }
+
+    body > main {
+        display: flex;
+        flex-flow: column;
     }
 }
 
@@ -118,4 +132,9 @@ nav > a {
     display: flex;
     align-items: center;
     padding: 0 12px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 5fr;
 }
