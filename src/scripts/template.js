@@ -47,7 +47,7 @@ for (const doc of docs) {
 }
 
 const menu = document.createElement("button");
-header.appendChild(menu);
+nav.before(menu);
 
 menu.className = "menu";
 
