@@ -64,3 +64,28 @@ document.body.addEventListener("click", (event) => {
     nav.classList.remove("open");
     menu.classList.remove("open");
 });
+
+const images = document.querySelectorAll("img");
+
+for (const image of images) {
+    image.addEventListener("click", (event) => {
+        const dialog = document.createElement("dialog");
+        document.body.appendChild(dialog);
+
+        dialog.appendChild(image.cloneNode());
+
+        dialog.showModal();
+
+        dialog.addEventListener("close", () => {
+            dialog.remove();
+        });
+
+        document.addEventListener("click", (innerEvent) => {
+            if (innerEvent === event) {
+                return;
+            }
+
+            dialog.close();
+        });
+    });
+}
