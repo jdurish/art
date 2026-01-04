@@ -205,3 +205,23 @@ main > section {
 .gallery > img {
     max-width: 48%;
 }
+
+.icon {
+    height: 24px;
+    aspect-ratio: 1;
+    display: inline-flex;
+    vertical-align: middle;
+    background-size: cover;
+}
+
+.instagram {
+    background-image: url("/src/assets/images/Instagram_icon.png");
+}
+
+.pinterest {
+    background-image: url("/src/assets/images/Pinterest_icon.png");
+}
+
+.facebook {
+    background-image: url("/src/assets/images/Facebook_icon.png");
+}
