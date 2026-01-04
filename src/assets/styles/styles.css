@@ -53,6 +53,10 @@ a.current-page {
     font-size: 24px;
 }
 
+main a {
+    color: #0000EE;
+}
+
 body {
     display: flex;
     flex-flow: column;
@@ -76,6 +80,10 @@ button.menu {
 @media only screen and (max-width: 1000px) {
     header, main {
         width: 80%;
+    }
+
+    header > a.logo::after {
+        content: "";
     }
 }
 
@@ -151,6 +159,17 @@ a.logo {
     background-image: url("../images/logo.jpg");
     background-size: cover;
     box-shadow: 0px 16px 4px -6px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+}
+
+a.logo::after {
+    content: "Durish Works";
+    font-weight: bold;
+    white-space: nowrap;
+    position: relative;
+    font-size: 24px;
+    left: 130%;
 }
 
 nav {
@@ -169,8 +188,14 @@ main {
     gap: 24px;
 }
 
-.gallery {
+main > section {
     display: flex;
+    flex-flow: column;
+    align-items: start;
+    gap: 12px;
+}
+
+.gallery {
     flex-flow: row wrap;
     align-items: start;
     justify-content: space-between;

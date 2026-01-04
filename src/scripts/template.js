@@ -21,6 +21,7 @@ const docs = [
     "Minis",
     "Smithing",
     "About",
+    "Sales",
     "Contact",
 ];
 
