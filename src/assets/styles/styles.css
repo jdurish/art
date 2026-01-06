@@ -193,14 +193,16 @@ main > section {
 }
 
 .gallery {
-    flex-flow: row wrap;
-    align-items: start;
-    justify-content: space-between;
+    display: block;
+    columns: 2 200px;
     gap: 12px;
 }
 
 .gallery > img {
-    max-width: 48%;
+    display: flex;
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 12px;
 }
 
 .icon {
