@@ -143,7 +143,7 @@ button.menu {
     }
     
     section.gallery {
-        columns: auto 140px;
+        columns: 140px;
     }
 }
 
@@ -198,7 +198,7 @@ main > section {
 
 .gallery {
     display: block;
-    columns: auto 175px;
+    columns: 175px;
     gap: 12px;
 }
 
