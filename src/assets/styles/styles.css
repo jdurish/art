@@ -4,6 +4,7 @@
     text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
     scrollbar-width: thin;
     scrollbar-color: #924b03 transparent;
+    box-sizing: border-box;
 }
 
 :not(dialog) {
@@ -87,14 +88,8 @@ button.menu {
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 780px) {
     header > nav {
-        position: absolute;
-        right: 20%;
-        top: 54px;
-    }
-    
-    header > nav > a:not(.current-page) {
         display: none;
     }
     
@@ -125,6 +120,8 @@ button.menu {
     }
 
     header > nav.open {
+        display: flex;
+        position: absolute;
         flex-flow: column;
         align-items: end;
         padding: 12px 12px 12px 36px;
