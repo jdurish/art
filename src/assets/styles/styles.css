@@ -194,7 +194,7 @@ main > section {
 
 .gallery {
     display: block;
-    columns: auto 200px;
+    columns: auto 180px;
     gap: 12px;
 }
 
