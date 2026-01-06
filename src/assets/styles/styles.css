@@ -141,6 +141,10 @@ button.menu {
         display: flex;
         flex-flow: column;
     }
+    
+    section.gallery {
+        columns: auto 140px;
+    }
 }
 
 header {
@@ -194,7 +198,7 @@ main > section {
 
 .gallery {
     display: block;
-    columns: auto 180px;
+    columns: auto 175px;
     gap: 12px;
 }
 
