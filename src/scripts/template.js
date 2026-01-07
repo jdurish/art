@@ -17,7 +17,7 @@ header.appendChild(nav);
 const fileNameOf = (doc) => doc.toLowerCase().replace(" ", "-");
 
 const docs = [
-    "2D Art",
+    "Drawings",
     "Minis",
     "Smithing",
     "About",
