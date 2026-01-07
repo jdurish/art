@@ -23,6 +23,7 @@ const docs = [
     "About",
     "Sales",
     "Contact",
+    "Community",
 ];
 
 const homeAnchor = document.createElement("a");

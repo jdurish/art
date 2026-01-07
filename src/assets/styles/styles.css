@@ -67,11 +67,12 @@ body {
     overflow-x: hidden;
     background-image: url("../images/background.png");
     background-size: cover;
+    padding: 0px 24px;
 }
 
 header, main {
     width: 950px;
-    padding: 24px;
+    padding: 24px 0px;
 }
 
 button.menu {
@@ -80,7 +81,7 @@ button.menu {
 
 @media only screen and (max-width: 1000px) {
     header, main {
-        width: 95%;
+        width: 100%;
     }
 
     header > a.logo::after {
@@ -88,7 +89,7 @@ button.menu {
     }
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 750px) {
     header > nav {
         display: none;
     }
@@ -198,7 +199,7 @@ main > section {
 
 .gallery {
     display: block;
-    columns: 175px;
+    columns: 190px;
     gap: 12px;
 }
 
@@ -210,10 +211,10 @@ main > section {
 }
 
 .icon {
-    height: 24px;
+    height: 20px;
     aspect-ratio: 1;
     display: inline-flex;
-    vertical-align: middle;
+    vertical-align: bottom;
     background-size: cover;
 }
 
@@ -227,4 +228,8 @@ main > section {
 
 .facebook {
     background-image: url("/src/assets/images/Facebook_icon.png");
+}
+
+.website {
+    background-image: url("/src/assets/images/globe.svg");
 }
