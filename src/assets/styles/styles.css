@@ -67,12 +67,11 @@ body {
     overflow-x: hidden;
     background-image: url("../images/background.png");
     background-size: cover;
-    padding: 0px 24px;
 }
 
 header, main {
-    width: 950px;
-    padding: 24px 0px;
+    width: 1000px;
+    padding: 24px;
 }
 
 button.menu {
