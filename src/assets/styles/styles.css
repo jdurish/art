@@ -216,6 +216,7 @@ main > section {
     display: inline-flex;
     vertical-align: bottom;
     background-size: cover;
+    margin: 0px 2px;
 }
 
 .instagram {
