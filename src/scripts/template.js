@@ -67,9 +67,9 @@ document.body.addEventListener("click", (event) => {
     menu.classList.remove("open");
 });
 
-const images = document.querySelectorAll("img");
+const galleryImages = document.querySelectorAll(".gallery img");
 
-for (const image of images) {
+for (const image of galleryImages) {
     image.addEventListener("click", (event) => {
         const dialog = document.createElement("dialog");
         document.body.appendChild(dialog);

@@ -12,10 +12,6 @@
     padding: 0;
 }
 
-img {
-    cursor: zoom-in;
-}
-
 dialog {
     padding: 0;
     outline: none;
@@ -202,11 +198,15 @@ main > section {
     gap: 12px;
 }
 
-.gallery > img {
+.gallery > * {
     display: flex;
     width: 100%;
     border-radius: 16px;
     margin-bottom: 12px;
+}
+
+.gallery img {
+    cursor: zoom-in;
 }
 
 .icon {
