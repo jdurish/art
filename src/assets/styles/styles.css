@@ -230,6 +230,10 @@ main > section {
     background-image: url("/src/assets/images/Facebook_icon.png");
 }
 
+.discord {
+    background-image: url("/src/assets/images/Discord_icon.svg");
+}
+
 .website {
     background-image: url("/src/assets/images/globe.svg");
 }
