@@ -50,6 +50,10 @@ a.current-page {
     font-size: 24px;
 }
 
+h2 {
+    font-size: 18px;
+}
+
 main a {
     color: #0000EE;
 }
