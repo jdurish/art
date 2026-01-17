@@ -97,7 +97,7 @@ button.menu {
     }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 700px) {
     header > nav {
         display: none;
     }
