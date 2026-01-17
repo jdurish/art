@@ -1,3 +1,8 @@
+@font-face {
+    font-family: JimNightshade;
+    src: url("/src/assets/fonts/JimNightshade-Regular.ttf");
+}
+
 * { 
     font-family: Calibri, 'Trebuchet MS', sans-serif;
     color: #924b03;
@@ -5,6 +10,10 @@
     scrollbar-width: thin;
     scrollbar-color: #924b03 transparent;
     box-sizing: border-box;
+}
+
+h1, header * {
+    font-family: JimNightshade;
 }
 
 :not(dialog) {
