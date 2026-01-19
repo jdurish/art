@@ -1,6 +1,6 @@
 @font-face {
-    font-family: JimNightshade;
-    src: url("/src/assets/fonts/JimNightshade-Regular.ttf");
+    font-family: PermanentMarker;
+    src: url("/src/assets/fonts/PermanentMarker-Regular.ttf");
 }
 
 * { 
@@ -13,7 +13,7 @@
 }
 
 h1, header * {
-    font-family: JimNightshade;
+    font-family: PermanentMarker;
 }
 
 :not(dialog) {
@@ -97,7 +97,7 @@ button.menu {
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 810px) {
     header > nav {
         display: none;
     }
