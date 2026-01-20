@@ -221,6 +221,10 @@ main > section {
     cursor: zoom-in;
 }
 
+iframe {
+    height: 800px;
+}
+
 .icon {
     height: 20px;
     aspect-ratio: 1;
