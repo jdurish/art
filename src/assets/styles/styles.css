@@ -201,7 +201,6 @@ main {
 main > section {
     display: flex;
     flex-flow: column;
-    align-items: start;
     gap: 12px;
 }
 
