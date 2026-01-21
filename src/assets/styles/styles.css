@@ -225,6 +225,18 @@ iframe {
     height: 1000px;
 }
 
+iframe.loading::after {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: #924b03;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
 .icon {
     height: 20px;
     aspect-ratio: 1;
