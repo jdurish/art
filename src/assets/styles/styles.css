@@ -225,17 +225,28 @@ iframe {
     height: 1000px;
 }
 
-iframe.loading::after {
+section:has(iframe.loading)::before {
+    content: "";
+    align-self: center;
+    z-index: -1;
+    margin-top: 36px;
     position: absolute;
     width: 48px;
     height: 48px;
     border: 5px solid #FFF;
     border-bottom-color: #924b03;
     border-radius: 50%;
-    display: inline-block;
-    box-sizing: border-box;
     animation: rotation 1s linear infinite;
 }
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 
 
 .icon {
     height: 20px;
