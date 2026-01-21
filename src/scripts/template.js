@@ -95,6 +95,8 @@ for (const image of galleryImages) {
 const iframes = document.querySelectorAll("iframe");
 
 for (const iframe of iframes) {
+    iframe.classList.add("loading");
+
     iframe.addEventListener("load", () => {
         iframe.classList.remove("loading");
     });
