@@ -74,7 +74,7 @@ body {
     min-height: 100vh;
     min-width: 100vw;
     overflow-x: hidden;
-    background-image: url("../images/background.png");
+    background-image: url("../images/background.webp");
     background-size: cover;
 }
 
@@ -166,7 +166,7 @@ a.logo {
     width: 80px;
     border-radius: 80px;
     aspect-ratio: 1;
-    background-image: url("../images/logo.jpg");
+    background-image: url("../images/logo.webp");
     background-size: cover;
     box-shadow: 0px 16px 4px -6px rgba(0,0,0,0.1);
     display: flex;
@@ -258,15 +258,15 @@ section:has(iframe.loading)::before {
 }
 
 .instagram {
-    background-image: url("/src/assets/images/Instagram_icon.png");
+    background-image: url("/src/assets/images/Instagram_icon.webp");
 }
 
 .pinterest {
-    background-image: url("/src/assets/images/Pinterest_icon.png");
+    background-image: url("/src/assets/images/Pinterest_icon.webp");
 }
 
 .facebook {
-    background-image: url("/src/assets/images/Facebook_icon.png");
+    background-image: url("/src/assets/images/Facebook_icon.webp");
 }
 
 .discord {
