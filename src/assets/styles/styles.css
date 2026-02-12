@@ -222,7 +222,7 @@ main > section {
 }
 
 iframe {
-    height: 1000px;
+    height: 1200px;
 }
 
 section:has(iframe.loading)::before {
