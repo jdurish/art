@@ -36,6 +36,11 @@
     <priority>0.64</priority>
   </url>
   <url>
+    <loc>https://durishworks.com/pricing</loc>
+    <lastmod>2026-01-10T01:21:39+00:00</lastmod>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://durishworks.com/community</loc>
     <lastmod>2026-01-10T01:21:39+00:00</lastmod>
     <priority>0.50</priority>

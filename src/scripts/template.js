@@ -22,6 +22,7 @@ const docs = [
     "Smithing",
     "About",
     "Sales",
+    "Pricing",
     "Contact",
     "Community",
 ];

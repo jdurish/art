@@ -59,10 +59,6 @@ a.current-page {
     font-size: 24px;
 }
 
-h2 {
-    font-size: 18px;
-}
-
 main a {
     color: #0000EE;
 }
@@ -79,7 +75,7 @@ body {
 }
 
 header, main {
-    width: 1000px;
+    width: 1100px;
     padding: 24px;
 }
 
@@ -87,7 +83,7 @@ button.menu {
     display: none;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
     header, main {
         width: 100%;
     }
@@ -97,7 +93,7 @@ button.menu {
     }
 }
 
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 900px) {
     header > nav {
         display: none;
     }
@@ -206,7 +202,7 @@ main > section {
 
 .gallery {
     display: block;
-    columns: 190px;
+    columns: 210px;
     gap: 12px;
 }
 
@@ -223,6 +219,27 @@ main > section {
 
 iframe {
     height: 1200px;
+}
+
+table {
+    text-align: left;
+    border: #652600 solid 1px;
+    border-spacing: 0px;
+}
+
+th {
+    color: wheat;
+    text-shadow: none;
+    background: #652600;
+    font-size: 18px;
+}
+
+td {
+    background: wheat;
+}
+
+th, td {
+    padding: 6px;
 }
 
 section:has(iframe.loading)::before {
